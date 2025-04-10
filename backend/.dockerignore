@@ -1,0 +1,16 @@
+# Ignore dependencies and logs
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Ignore Git-related files
+.git
+.gitignore
+
+# Ignore local env files
+.env
+.env.local
+
+# Ignore local build output (doesn't affect container builds)
+dist
+build

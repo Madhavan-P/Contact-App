@@ -1,0 +1,17 @@
+  version: '3'
+
+  services:
+    backend:
+      build:
+        context: ./backend
+      ports:
+        - "3006:3006"
+      # # Optional: add restart policy
+      # restart: unless-stopped
+
+    frontend:
+      build:
+        context: ./frontend
+      ports:
+        - "8000:5173"
+      # restart: unless-stopped
